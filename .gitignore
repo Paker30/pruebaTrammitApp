@@ -108,3 +108,5 @@ public/bundle.js
 
 # ide configuration
 .vscode
+
+app/lib/
