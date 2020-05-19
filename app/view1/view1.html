@@ -3,9 +3,6 @@
     <div ng-non-bindable>
     <!-- This part is managed by Vuejs-->
       <counter 
-          :initial-count-value="initialCountValue"
-          v-on:increment="updateCountValue"
-          v-on:decrement="updateCountValue"
           :shared-date="sharedDate"
           v-on:selected="updateDate"
       ></counter>
@@ -13,9 +10,4 @@
     
     <br><br>
     <input type="date" ng-model="date" ng-change="changeDate()">
-    <input ng-model="countValue">
-    <!-- This part is managed by Angular-->
-    Counter value: {{countValue}} <br>
-    <button ng-click="decrementCount()" type="button">Decrement by 10</button>
-    <button ng-click="incrementCount()" type="button">Increment by 10</button>
   </div>
